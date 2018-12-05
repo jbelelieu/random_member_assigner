@@ -17,4 +17,9 @@ module.exports = {
     'src/**/*.{ts,tsx,js,jsx}',
     '!src/**/*.d.ts',
   ],
+  coveragePathIgnorePatterns: [
+    "<rootDir>/build/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/src/index.ts"
+  ]
 };
