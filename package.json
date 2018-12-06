@@ -1,7 +1,7 @@
 {
 	"name": "random_member_assigner",
 	"version": "1.0.0",
-	"description": "Given an array, this tool will randomly assign one array member to another. Originally built for a secret santa operation!",
+	"description": "Given an array, this tool will randomly assign one member in an array to another. Originally built for a secret santa operation!",
 	"engineStrict": true,
 	"engines": {
 		"node": ">= 10.13 <11"

@@ -1,11 +1,20 @@
-import * as members from '../data/members.json';
+/**
+ * Random Member Assigner
+ * 
+ * Given an array, this tool will randomly assign one array member to another.
+ * Originally built for a secret santa operation!
+ * 
+ * @author jbelelieu
+ */
+
 import { Selector } from './classes/Selector';
 import { buildMemberArray } from './helpers/builders';
 
-// Build a member array compatible with Selector class.
-const memberArray = buildMemberArray(members, 'name');
-
-// Randomize which member got which member
-const selected = new Selector(memberArray).pick();
-
-console.log(selected);
+/**
+ * 
+ * @param input 
+ * @param keyId 
+ */
+export function assignMembers(members: any[], keyId: string = 'name') {
+	return new Selector(buildMemberArray(members, keyId)).pick();
+}
